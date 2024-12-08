@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                margin: 10px 20px;
+                padding: 50px;
+                background: fixed; background: #00000010;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body >
+    <h1>Admission form</h1>
+    <br>
+    <table>
+    <form >
+        <tr>
+            <td>Name:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>D.o.B :</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Father's Name:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Mother's Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Date of joining</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>Mark scored in SSLC:</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>SSLC School Name:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Course decided for Higher Secondary :</td>
+            <td><select>
+            <option>Science</option>
+            <option>literacture</option>
+            <option>Mathametics</option>
+            <option>Commerce</option>
+            <option>Economics</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Identification mark :</td>
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+        <td><p>Thankyou for the information , futher details will be collected by the institution...</p></td>
+        </tr>
+        <tr>
+        <td>
+            <button id="my button"> Submit</button>
+        <script>
+            const button = document.getElementById("my button");
+            const eventType = "click";
+            function handleEvent(){
+                console.log( "event obj");
+                alert("The information recored"); 
+            }
+            button.addEventListener(eventType,handleEvent);
+        </script>
+         </td>
+        </tr>
+    </form>
+    </table>
+    </body>
+</html>
